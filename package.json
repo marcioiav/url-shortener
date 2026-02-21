@@ -1,0 +1,30 @@
+
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "prisma:push": "prisma db push",
+    "test": "jest --runInBand"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.12.0",
+    "dotenv": "^16.4.0",
+    "express": "^4.19.0",
+    "is-url-superb": "^6.0.0",
+    "nanoid": "^5.0.6"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "prisma": "^5.12.0",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.7.0",
+    "typescript": "^5.6.3"
+  }
+}
